@@ -1,12 +1,11 @@
-# fonctions.py
-def puissance(a: int, b: int) -> int:
-    """
-    Calcule a élevé à la puissance b.
+def puissance(a, b):
+    # Vérification que les deux arguments sont des entiers
+    if not isinstance(a, int) or not isinstance(b, int):
+        raise TypeError("Only integers are allowed")
 
-    :param a: La base (entier).
-    :param b: L'exposant (entier).
-    :return: Le résultat de a ** b.
-    """
+    # Calcul de la puissance
     return a ** b
+
+
 
 
